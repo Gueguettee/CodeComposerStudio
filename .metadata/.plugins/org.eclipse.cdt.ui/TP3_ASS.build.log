@@ -1,0 +1,92 @@
+
+**** Build of configuration Debug for project TP3_ASS ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP3_ASS" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'main.obj' failed
+"../main.c", line 1: error #171: expected a declaration
+"../main.c", line 2: error #20: identifier "MSP430" is undefined
+"../main.c", line 2: error #66: expected a ";"
+"../main.c", line 5: error #171: expected a declaration
+"../main.c", line 7: error #20: identifier "Include" is undefined
+"../main.c", line 7: error #66: expected a ";"
+"../main.c", line 9: error #171: expected a declaration
+"../main.c", line 10: error #20: identifier "Export" is undefined
+"../main.c", line 10: error #66: expected a ";"
+"../main.c", line 11: error #20: identifier "make" is undefined
+"../main.c", line 11: error #66: expected a ";"
+"../main.c", line 13: error #171: expected a declaration
+"../main.c", line 14: error #20: identifier "Assemble" is undefined
+"../main.c", line 14: error #66: expected a ";"
+"../main.c", line 15: error #20: identifier "Override" is undefined
+"../main.c", line 15: error #66: expected a ";"
+"../main.c", line 16: error #20: identifier "and" is undefined
+"../main.c", line 16: error #66: expected a ";"
+"../main.c", line 17: error #20: identifier "And" is undefined
+"../main.c", line 17: error #66: expected a ";"
+"../main.c", line 18: error #20: identifier "references" is undefined
+"../main.c", line 18: error #66: expected a ";"
+"../main.c", line 20: error #171: expected a declaration
+"../main.c", line 21: error #10: "#" not expected here
+"../main.c", line 21: error #20: identifier "Initialize" is undefined
+"../main.c", line 22: error #66: expected a ";"
+"../main.c", line 22: error #10: "#" not expected here
+"../main.c", line 22: error #20: identifier "Stop" is undefined
+"../main.c", line 22: error #66: expected a ";"
+"../main.c", line 25: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 25: error #171: expected a declaration
+"../main.c", line 26: error #20: identifier "Main" is undefined
+"../main.c", line 26: error #66: expected a ";"
+"../main.c", line 27: error #171: expected a declaration
+"../main.c", line 30: error #10: "#" not expected here
+"../main.c", line 31: error #10: "#" not expected here
+"../main.c", line 32: error #10: "#" not expected here
+"../main.c", line 33: error #10: "#" not expected here
+"../main.c", line 33: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 33: error #20: identifier "led1" is undefined
+"../main.c", line 34: error #66: expected a ";"
+"../main.c", line 34: error #10: "#" not expected here
+"../main.c", line 36: error #10: "#" not expected here
+"../main.c", line 37: error #10: "#" not expected here
+"../main.c", line 38: error #10: "#" not expected here
+"../main.c", line 39: error #10: "#" not expected here
+"../main.c", line 39: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 39: error #20: identifier "led2" is undefined
+"../main.c", line 40: error #66: expected a ";"
+"../main.c", line 40: error #10: "#" not expected here
+"../main.c", line 42: error #10: "#" not expected here
+"../main.c", line 42: error #20: identifier "s1" is undefined
+"../main.c", line 43: error #66: expected a ";"
+"../main.c", line 43: error #10: "#" not expected here
+"../main.c", line 45: error #10: "#" not expected here
+"../main.c", line 45: error #20: identifier "s2" is undefined
+"../main.c", line 46: error #66: expected a ";"
+"../main.c", line 46: error #10: "#" not expected here
+"../main.c", line 51: error #10: "#" not expected here
+"../main.c", line 54: error #10: "#" not expected here
+"../main.c", line 56: error #10: "#" not expected here
+"../main.c", line 59: error #10: "#" not expected here
+"../main.c", line 62: error #10: "#" not expected here
+"../main.c", line 64: error #10: "#" not expected here
+"../main.c", line 67: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 67: error #171: expected a declaration
+"../main.c", line 68: error #20: identifier "Stack" is undefined
+"../main.c", line 68: error #66: expected a ";"
+"../main.c", line 69: error #171: expected a declaration
+"../main.c", line 73: warning #12-D: parsing restarts here after previous syntax error
+"../main.c", line 73: error #171: expected a declaration
+"../main.c", line 74: error #20: identifier "Interrupt" is undefined
+"../main.c", line 75: error #171: expected a declaration
+"../main.c", line 76: error #20: identifier "MSP430" is undefined
+"../main.c", line 76: error #66: expected a ";"
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+70 errors detected in the compilation of "../main.c".
+gmake: *** [main.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****

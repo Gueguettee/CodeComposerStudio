@@ -1,0 +1,1 @@
+"./src/HAL/HAL_MSP430.obj" "./src/MP_5-20_template.obj" "../lnk_msp430fr5969.cmd" -llibc.a -llibmath.a 

@@ -1,0 +1,24 @@
+
+**** Build of configuration Debug for project MP_5-20-Timer-initialization ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k all 
+ 
+Building file: "../src/HAL/HAL_MSP430.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --abi=eabi --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power="4,5.2,6,7,8,9,10,11,12,13,14,15" --advice:hw_config="all" -g --c99 --define=__MSP430FR5969__ --display_error_number --diag_warning=225 --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --printf_support=nofloat --preproc_with_compile --preproc_dependency="src/HAL/HAL_MSP430.d_raw" --obj_directory="src/HAL"  "../src/HAL/HAL_MSP430.c"
+"../src/HAL/HAL_MSP430.c", line 73: warning #1181-D: #warning directive: TA0CTL to be configured according exercice
+Finished building: "../src/HAL/HAL_MSP430.c"
+ 
+Building file: "../src/MP_5-20_template.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --abi=eabi --data_model=restricted -Ooff --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power="4,5.2,6,7,8,9,10,11,12,13,14,15" --advice:hw_config="all" -g --c99 --define=__MSP430FR5969__ --display_error_number --diag_warning=225 --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --printf_support=nofloat --preproc_with_compile --preproc_dependency="src/MP_5-20_template.d_raw" --obj_directory="src"  "../src/MP_5-20_template.c"
+Finished building: "../src/MP_5-20_template.c"
+ 
+Building target: "MP_5-20-Timer-initialization.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --abi=eabi --data_model=restricted -Ooff --use_hw_mpy=F5 --advice:power="4,5.2,6,7,8,9,10,11,12,13,14,15" --advice:hw_config="all" -g --c99 --define=__MSP430FR5969__ --display_error_number --diag_warning=225 --diag_wrap=off --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --printf_support=nofloat -z -m"MP_5-20-Timer-initialization.map" --stack_size=400 --heap_size=400 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" --reread_libs --priority --warn_sections --diag_wrap=off --display_error_number --xml_link_info="MP_5-20-Timer-initialization_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "MP_5-20-Timer-initialization.out" "./src/HAL/HAL_MSP430.obj" "./src/MP_5-20_template.obj" "../lnk_msp430fr5969.cmd"  -llibc.a -llibmath.a 
+<Linking>
+Finished building target: "MP_5-20-Timer-initialization.out"
+ 
+
+**** Build Finished ****

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ex_c/MP_5-1-GPIO-Initialization&apos;" deleteContents="false" description="Delete resource &apos;ex_c/MP_5-1-GPIO-Initialization&apos;" element1="/ex_c/MP_5-1-GPIO-Initialization" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1649934627540"/>
+</session>
