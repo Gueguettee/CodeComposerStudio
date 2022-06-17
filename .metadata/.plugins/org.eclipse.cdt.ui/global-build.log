@@ -5082,3 +5082,311 @@ Finished building target: "Micro-Ex_5_10-SPI-initialization.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+"../TP_Test_Gaetan_Jenni.c", line 86: warning #112-D: statement is unreachable
+"../TP_Test_Gaetan_Jenni.c", line 52: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 68: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 76: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 166: warning #225-D: function "LED1_ON" declared implicitly
+"../TP_Test_Gaetan_Jenni.c", line 172: warning #225-D: function "LED1_OFF" declared implicitly
+"../TP_Test_Gaetan_Jenni.c", line 166: remark #1538-D: (ULP 10.1) ISR Timer0_B0_ISR calls function LED1_ON. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../TP_Test_Gaetan_Jenni.c", line 172: remark #1538-D: (ULP 10.1) ISR Timer0_B0_ISR calls function LED1_OFF. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+Finished building: "../TP_Test_Gaetan_Jenni.c"
+ 
+Building target: "TP_Test_Gaetan_Jenni.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"TP_Test_Gaetan_Jenni.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TP_Test_Gaetan_Jenni_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TP_Test_Gaetan_Jenni.out" "./TP_Test_Gaetan_Jenni.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+ 
+ undefined first referenced          
+  symbol       in file               
+ --------- ----------------          
+ LED1_OFF  ./TP_Test_Gaetan_Jenni.obj
+ LED1_ON   ./TP_Test_Gaetan_Jenni.obj
+ 
+error #10234-D: unresolved symbols remain
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+error #10010: errors encountered during linking; "TP_Test_Gaetan_Jenni.out" not built
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+ 
+>> Compilation failure
+makefile:143: recipe for target 'TP_Test_Gaetan_Jenni.out' failed
+gmake[1]: *** [TP_Test_Gaetan_Jenni.out] Error 1
+makefile:139: recipe for target 'all' failed
+gmake: *** [all] Error 2
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+ 
+>> Compilation failure
+subdir_rules.mk:9: recipe for target 'TP_Test_Gaetan_Jenni.obj' failed
+"../TP_Test_Gaetan_Jenni.c", line 86: warning #112-D: statement is unreachable
+"../TP_Test_Gaetan_Jenni.c", line 52: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 68: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 76: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 164: warning #225-D: function "LED1_ON" declared implicitly
+"../TP_Test_Gaetan_Jenni.c", line 170: warning #225-D: function "LED1_OFF" declared implicitly
+"../TP_Test_Gaetan_Jenni.c", line 164: remark #1538-D: (ULP 10.1) ISR Timer0_B0_ISR calls function LED1_ON. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../TP_Test_Gaetan_Jenni.c", line 170: remark #1538-D: (ULP 10.1) ISR Timer0_B0_ISR calls function LED1_OFF. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../TP_Test_Gaetan_Jenni.c", line 174: error #171: expected a declaration
+"../TP_Test_Gaetan_Jenni.c", line 177: error #609: this pragma must immediately precede a declaration
+At end of source: warning #12-D: parsing restarts here after previous syntax error
+"../TP_Test_Gaetan_Jenni.c", line 41: remark #1535-D: (ULP 8.1) variable "compteur_on" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+2 errors detected in the compilation of "../TP_Test_Gaetan_Jenni.c".
+gmake: *** [TP_Test_Gaetan_Jenni.obj] Error 1
+gmake: Target 'all' not remade because of errors.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+"../TP_Test_Gaetan_Jenni.c", line 86: warning #112-D: statement is unreachable
+"../TP_Test_Gaetan_Jenni.c", line 52: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 68: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 76: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 164: warning #225-D: function "LED1_ON" declared implicitly
+"../TP_Test_Gaetan_Jenni.c", line 170: warning #225-D: function "LED1_OFF" declared implicitly
+"../TP_Test_Gaetan_Jenni.c", line 164: remark #1538-D: (ULP 10.1) ISR Timer0_B0_ISR calls function LED1_ON. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+"../TP_Test_Gaetan_Jenni.c", line 170: remark #1538-D: (ULP 10.1) ISR Timer0_B0_ISR calls function LED1_OFF. Recommend moving function call away from ISR, or inlining the function, or using pragmas
+Finished building: "../TP_Test_Gaetan_Jenni.c"
+ 
+Building target: "TP_Test_Gaetan_Jenni.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"TP_Test_Gaetan_Jenni.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TP_Test_Gaetan_Jenni_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TP_Test_Gaetan_Jenni.out" "./TP_Test_Gaetan_Jenni.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+ 
+ undefined first referenced          
+  symbol       in file               
+ --------- ----------------          
+ LED1_OFF  ./TP_Test_Gaetan_Jenni.obj
+ LED1_ON   ./TP_Test_Gaetan_Jenni.obj
+ 
+error #10234-D: unresolved symbols remain
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+error #10010: errors encountered during linking; "TP_Test_Gaetan_Jenni.out" not built
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+ 
+>> Compilation failure
+makefile:143: recipe for target 'TP_Test_Gaetan_Jenni.out' failed
+gmake[1]: *** [TP_Test_Gaetan_Jenni.out] Error 1
+gmake: *** [all] Error 2
+makefile:139: recipe for target 'all' failed
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+"../TP_Test_Gaetan_Jenni.c", line 86: warning #112-D: statement is unreachable
+"../TP_Test_Gaetan_Jenni.c", line 52: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 68: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 76: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../TP_Test_Gaetan_Jenni.c"
+ 
+Building target: "TP_Test_Gaetan_Jenni.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"TP_Test_Gaetan_Jenni.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TP_Test_Gaetan_Jenni_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TP_Test_Gaetan_Jenni.out" "./TP_Test_Gaetan_Jenni.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "TP_Test_Gaetan_Jenni.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+"../TP_Test_Gaetan_Jenni.c", line 52: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 68: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 76: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../TP_Test_Gaetan_Jenni.c"
+ 
+Building target: "TP_Test_Gaetan_Jenni.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"TP_Test_Gaetan_Jenni.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TP_Test_Gaetan_Jenni_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TP_Test_Gaetan_Jenni.out" "./TP_Test_Gaetan_Jenni.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "TP_Test_Gaetan_Jenni.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+"../TP_Test_Gaetan_Jenni.c", line 52: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 68: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 76: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../TP_Test_Gaetan_Jenni.c"
+ 
+Building target: "TP_Test_Gaetan_Jenni.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"TP_Test_Gaetan_Jenni.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TP_Test_Gaetan_Jenni_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TP_Test_Gaetan_Jenni.out" "./TP_Test_Gaetan_Jenni.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "TP_Test_Gaetan_Jenni.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'TP_Test_Gaetan_Jenni.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'TP_Test_Gaetan_Jenni.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+"../TP_Test_Gaetan_Jenni.c", line 52: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 68: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 76: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../TP_Test_Gaetan_Jenni.c"
+ 
+Building target: "TP_Test_Gaetan_Jenni.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"TP_Test_Gaetan_Jenni.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TP_Test_Gaetan_Jenni_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TP_Test_Gaetan_Jenni.out" "./TP_Test_Gaetan_Jenni.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "TP_Test_Gaetan_Jenni.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+"../TP_Test_Gaetan_Jenni.c", line 52: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 68: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 76: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../TP_Test_Gaetan_Jenni.c"
+ 
+Building target: "TP_Test_Gaetan_Jenni.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"TP_Test_Gaetan_Jenni.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TP_Test_Gaetan_Jenni_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TP_Test_Gaetan_Jenni.out" "./TP_Test_Gaetan_Jenni.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "TP_Test_Gaetan_Jenni.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+"../TP_Test_Gaetan_Jenni.c", line 52: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 60: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 68: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 76: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 40: remark #1535-D: (ULP 8.1) variable "compteur" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../TP_Test_Gaetan_Jenni.c"
+ 
+Building target: "TP_Test_Gaetan_Jenni.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"TP_Test_Gaetan_Jenni.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TP_Test_Gaetan_Jenni_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TP_Test_Gaetan_Jenni.out" "./TP_Test_Gaetan_Jenni.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "TP_Test_Gaetan_Jenni.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'TP_Test_Gaetan_Jenni.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project TP_Test_Gaetan_Jenni ****
+
+"C:\\ti\\ccs1110\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../TP_Test_Gaetan_Jenni.c"
+Invoking: MSP430 Compiler
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --include_path="C:/ti/ccs1110/ccs/ccs_base/msp430/include" --include_path="D:/OneDrive - HESSO/COURS/MICROPROCESSEURS/TP/CodeComposerStudio/TP_Test_Gaetan_Jenni" --include_path="C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 --preproc_with_compile --preproc_dependency="TP_Test_Gaetan_Jenni.d_raw"  "../TP_Test_Gaetan_Jenni.c"
+"../TP_Test_Gaetan_Jenni.c", line 49: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 57: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 65: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../TP_Test_Gaetan_Jenni.c", line 73: remark #1530-D: (ULP 5.1) Detected modulo operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+Finished building: "../TP_Test_Gaetan_Jenni.c"
+ 
+Building target: "TP_Test_Gaetan_Jenni.out"
+Invoking: MSP430 Linker
+"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/bin/cl430" -vmspx --data_model=restricted --use_hw_mpy=F5 --advice:power=all --advice:hw_config=all --define=__MSP430FR5969__ --define=_MPU_ENABLE -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --silicon_errata=CPU21 --silicon_errata=CPU22 --silicon_errata=CPU40 -z -m"TP_Test_Gaetan_Jenni.map" --heap_size=160 --stack_size=160 --cinit_hold_wdt=on -i"C:/ti/ccs1110/ccs/ccs_base/msp430/include" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/5xx_6xx_FRxx" -i"C:/ti/ccs1110/ccs/ccs_base/msp430/lib/FR59xx" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/lib" -i"C:/ti/ccs1110/ccs/tools/compiler/ti-cgt-msp430_21.6.0.LTS/include" --priority --reread_libs --define=_MPU_ENABLE --diag_wrap=off --display_error_number --warn_sections --xml_link_info="TP_Test_Gaetan_Jenni_linkInfo.xml" --use_hw_mpy=F5 --rom_model -o "TP_Test_Gaetan_Jenni.out" "./TP_Test_Gaetan_Jenni.obj" "../lnk_msp430fr5969.cmd"  -llibmpu_init.a -llibmath.a -llibc.a 
+<Linking>
+warning #10421-D: For FRAM devices running at higher than 8MHz, FRAM waitstate needs to be configured accordingly.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port A in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+remark #10372-D: (ULP 4.1) Detected uninitialized Port B in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "TP_Test_Gaetan_Jenni.out"
+ 
+
+**** Build Finished ****
